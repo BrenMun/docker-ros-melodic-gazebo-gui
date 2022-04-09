@@ -70,6 +70,12 @@ sudo docker run --name rosmelodicgazebo -it --privileged -e DISPLAY=$DISPLAY -v 
 
 ## Running Additional Bash Sessions
 
+Make sure to give docker access to the X-Server using:
+
+```
+xhost +local:docker
+```
+
 To get a list of all containers created, use the following command (includes names and IDs):
 
 ```
