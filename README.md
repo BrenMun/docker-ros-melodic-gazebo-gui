@@ -65,7 +65,7 @@ sudo docker images
 Run a container with the following command (make sure to replace IMAGEID with the ID of the image):
 
 ```
-sudo docker run --name rosmelodicgazebo -it --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix IMAGEID
+sudo docker run --name rosmelodicgazebo --network host -it --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix IMAGEID
 ```
 
 ## Running Additional Bash Sessions
